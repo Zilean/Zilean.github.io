@@ -1,0 +1,22 @@
+{
+  "name": "zilean.github.io",
+  "version": "0.0.1",
+  "description": "好看、好用的组件库，",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zilean/Zilean.github.io.git"
+  },
+  "keywords": [
+    "Zant",
+    "Zanm",
+    "UI组件"
+  ],
+  "author": "Weich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zilean/Zilean.github.io/issues"
+  },
+  "homepage": "https://github.com/Zilean/Zilean.github.io#readme"
+}
