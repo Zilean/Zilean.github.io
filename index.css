@@ -1,7 +1,6 @@
 html,
 body {
-    overflow: hidden;
-    background: #141a48;
+    background-color: #141a48;
     margin: 0;
     padding: 0;
 }
@@ -30,12 +29,14 @@ body {
     transition: all 1.2s;
 }
 
-.zantb-wrapper canvas {
+.zantb-canvas {
     position: absolute;
     top: 0;
     left: 0;
-    width: 1950px;
-    height: auto;
+    width: 100%;
+    height: 100vh;
+    background-color: #141a48;
+    overflow: hidden;
 }
 
 #canvas {
@@ -49,4 +50,10 @@ body {
     -o-filter: blur(3px);
     filter: blur(3px);
     opacity: 0.6;
+}
+
+.zantb-content {
+    background-color: #fff;
+    margin-top: 100vh;
+    height: 800px;
 }

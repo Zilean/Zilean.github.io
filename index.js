@@ -1,8 +1,8 @@
-// min and max radius, radius threshold and percentage of filled circles
-var radMin = 5,
+// 最小和最大半径、半径阈值和填充圆的百分比
+var radMin = 5, // 最小半径
     radMax = 125,
-    filledCircle = 60, //percentage of filled circles
-    concentricCircle = 30, //percentage of concentric circles
+    filledCircle = 60, // 圆填充率
+    concentricCircle = 30, // 同心圆百分率
     radThreshold = 25; //IFF special, over this radius concentric, otherwise filled
 
 //min and max speed to move
@@ -39,7 +39,7 @@ var circleExp = 1,
     circleExpSp = 0.00004,
     circlePulse = false;
 
-//circle class
+// circle class
 function Circle(background) {
     //if background, it has different rules
     this.background = (background || false);
@@ -72,7 +72,8 @@ function randint(a, b) {
 function randRange(a, b) {
     return Math.random() * (b - a) + a;
 }
-//generate random float more likely to be close to a
+
+// 生成随机小数，很大概率接近数值a
 function hyperRange(a, b) {
     return Math.random() * Math.random() * Math.random() * (b - a) + a;
 }
@@ -179,9 +180,3 @@ function draw() {
 }
 
 init();
-
-/*Credits and aknowledgements:
-Original Idea and Design by Luca Luzzatti
-
-Optimizing tips from Benjamin K?stner
-General tips from Salvatore Previti*/
