@@ -1,8 +1,8 @@
 html,
 body {
-  background-color: #141a48;
-  margin: 0;
-  padding: 0;
+    background-color: #141a48;
+    margin: 0;
+    padding: 0;
 }
 
 a,
@@ -86,97 +86,176 @@ u,
 ul,
 var,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
 }
 
 ol,
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 .zantb-wrapper {
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  display: table;
-  position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: table;
 }
 
 .zantb-wrapper .zantb-nav {
-  z-index: 3;
-  height: 80px;
-  position: fixed;
-  width: 100%;
-  min-width: 1024px;
-  background-repeat: no-repeat;
-  background-position: 20px;
-  background: rgba(0, 0, 0, 0.2);
-  /* background: rgba(0,0,0,.2) url(https://img.yzcdn.cn/v2/image/youzanyun/zanui/pc/pc_shouye_logo1_v2.png) no-repeat 20px/76px 20px;
+    z-index: 3;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    min-width: 1024px;
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    /* background: rgba(0,0,0,.2) url(https://img.yzcdn.cn/v2/image/youzanyun/zanui/pc/pc_shouye_logo1_v2.png) no-repeat 20px/76px 20px;
     background: #000 url(https://img.yzcdn.cn/v2/image/youzanyun/zanui/pc/pc_shouye_logo1_v2.png) no-repeat 20px/76px 20px\0; */
-  -webkit-transition: all 1.2s;
-  -moz-transition: all 1.2s;
-  transition: all 1.2s;
+    -webkit-transition: all 1.2s;
+    -moz-transition: all 1.2s;
+    transition: all 1.2s;
 }
 
 .home-href {
-  position: absolute;
-  width: 79px;
-  height: 21px;
-  left: 20px;
-  top: 29px;
-  color: #fff;
-  font-weight: 700;
-  text-decoration: none;
+    position: absolute;
+    width: 79px;
+    height: 21px;
+    left: 20px;
+    top: 29px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
 }
 
 .zantb-nav ol {
-  position: absolute;
-  right: 0;
+    position: absolute;
+    right: 0;
 }
 
 .zantb-nav ol li {
-  float: left;
-  line-height: 80px;
-  font-size: 16px;
-  padding: 0 20px;
-  font-weight: 700;
+    float: left;
+    line-height: 80px;
+    font-size: 16px;
+    padding: 0 20px;
+    font-weight: 700;
 }
 
 .zantb-nav ol li a {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 .zantb-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: #141a48;
-  overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #141a48;
+    overflow: hidden;
 }
 
 #canvas {
-  z-index: 1;
+    z-index: 1;
 }
 
 #canvasbg {
-  z-index: -10;
-  -webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  filter: blur(3px);
-  opacity: 0.6;
+    z-index: -10;
+    -webkit-filter: blur(3px);
+    -moz-filter: blur(3px);
+    -o-filter: blur(3px);
+    filter: blur(3px);
+    opacity: 0.6;
 }
 
 .zantb-content {
-  background-color: #fff;
-  margin-top: 100vh;
-  height: 800px;
+    margin-top: 100vh;
+    width: 100%;
+    min-width: 1024px;
+}
+
+.zantb-pc {
+    margin: 0 auto;
+    position: relative;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-intro.intro-pc {
+    width: 512px;
+    margin-left: -256px;
+}
+
+.page-intro.intro-mobile {
+  width: 512px;
+  margin-right: -256px;
+}
+
+.page-intro .main-title {
+    padding: 20px 0;
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.page-intro .minor-title {
+    font-size: 18px;
+    line-height: 25px;
+    padding-bottom: 15px;
+}
+
+.page-intro .buttons-container a {
+    display: inline-block;
+    min-width: 80px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #3283fa;
+    background: #fff;
+    border: 1px solid #3283fa;
+    vertical-align: middle;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background-color .3s;
+    text-decoration: none;
+}
+
+.page-intro .buttons-container a+a {
+    margin-left: 20px;
+}
+
+.page-intro .buttons-container a.active {
+    color: #fff;
+    background: #3283fa;
+}
+
+.zantb-footer {
+    background-color: #373D41;
+    line-height: 50px;
+    bottom: -50px;
+    width: 100%;
+    min-width: 1024px;
+    color: #73777A;
+    font-size: 14px;
+}
+
+.zantb-footer a {
+    color: #73777A;
+    text-decoration: none;
+}
+
+.zantb-footer .beian {
+    vertical-align: middle;
+    margin-left: 10px;
 }

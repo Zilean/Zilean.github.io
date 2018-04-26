@@ -20,17 +20,59 @@
     <div class="zantb-nav">
       <a href="http://www.zantb.com/" class="home-href">Zantb</a>
       <ol>
-        <li><a href="http://www.zantb.com/">首页</a></li>
-        <li><a href="http://t.zantb.com/">PC端</a></li>
-        <li><a href="http://m.zantb.com/">移动端</a></li>
+        <li>
+          <a href="http://www.zantb.com/">首页</a>
+        </li>
+        <li>
+          <a href="http://t.zantb.com/">PC端</a>
+        </li>
+        <li>
+          <a href="http://m.zantb.com/">移动端</a>
+        </li>
       </ol>
     </div>
     <div class="zantb-canvas">
       <canvas id="canvas" width="1950px" height="800px"></canvas>
       <canvas id="canvasbg" width="1950px" height="800px"></canvas>
     </div>
+    <div class="zantb-content" id="scroll">
+      <div class="zantb-pc">
+        <div class="page-intro intro-pc">
+          <p class="main-title">PC端</p>
+          <p class="minor-title">基于 Vue.js 的后台组件库 </p>
+          <div class="buttons-container">
+            <a href="http://t.zantb.com" class="active">文档</a>
+            <a href="https://github.com/Zilean/zant">GitHub</a>
+          </div>
+        </div>
+        <div class="page-intro intro-mobile">
+          <p class="main-title">移动端</p>
+          <p class="minor-title">基于 Vue.js 的移动端组件库</p>
+          <div class="buttons-container">
+            <a href="http://m.zantb.com/" class="active">文档</a>
+            <a href="https://github.com/Zilean/zanm">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="zantb-footer">
+      Copyright © 2018. All Rights Reserved.
+      <a target="_blank" href="http://www.miitbeian.gov.cn/">鲁ICP备16035570号-2</a>
+
+      <a target="_blank" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37132502371376">
+        <img class="beian" src="./beian.png" />
+        <span>鲁公网安备 37132502371376号</span>
+      </a>
+    </div>
   </div>
   <script src="index.js"></script>
+
+  <script>
+    var host = window.location.host;
+    if (host.indexOf('zantb.com') == -1) {
+      document.getElementsByClassName('zantb-footer')[0].style.display = 'none';
+    }
+  </script>
 </body>
 
 </html>
